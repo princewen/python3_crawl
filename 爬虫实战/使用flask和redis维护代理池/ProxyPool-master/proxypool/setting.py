@@ -3,7 +3,7 @@ HOST = 'localhost'
 PORT = 6379
 
 # 如果Redis有密码，则添加这句密码，否则设置为None
-PASSWORD = 'foobared'
+PASSWORD = 'redis'
 
 # 代理池数量界限
 POOL_LOWER_THRESHOLD = 10
