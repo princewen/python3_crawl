@@ -5,7 +5,7 @@ REDIS_HOST = 'localhost'
 REDIS_PORT = 6379
 
 # Redis密码，如无填None
-REDIS_PASSWORD = ''
+REDIS_PASSWORD = 'redis'
 
 # 配置信息，无需修改
 REDIS_DOMAIN = '*'

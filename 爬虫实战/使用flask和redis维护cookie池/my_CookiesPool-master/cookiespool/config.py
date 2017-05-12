@@ -34,7 +34,7 @@ DEFAULT_BROWSER = 'Chrome'
 
 # 云打码相关配置到yundama.com申请注册
 YUNDAMA_USERNAME = 'ruc_wenwen'
-YUNDAMA_PASSWORD = ''
+YUNDAMA_PASSWORD = 'sxwqzyz123'
 YUNDAMA_APP_ID = '3485'
 YUNDAMA_APP_KEY = '9419694d4afb3f780a0b92825ff5ec03'
 

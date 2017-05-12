@@ -1,0 +1,18 @@
+Using selectors
+
+可用的方式:xpath,css
+response.xpath
+response.css
+返回selector组成的列表，调用extract或者extract_first()提取出内容
+
+可以对selector再次调用xpath或者css进行迭代查找
+
+extract_first(default='') 如果拿不到的话将用default属性替代，此处为空置
+
+属性名称包含img的超链接
+response.xpath('//a[contains(@href,"image")]/@href').extract()
+response.css('a[href*=image]::attr(href)')
+
+正则表达式匹配
+response.css('selector').re(pattern)
+response.css('selector').re_pattern(pattern)

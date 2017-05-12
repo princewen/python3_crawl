@@ -1,0 +1,9 @@
+用来处理request和response以及异常的组件
+
+继承以下几个方法或之一
+process_request
+process_response
+process_exception
+
+#可以输出内置middlewares的信息及优先级
+scrapy settings --get=DOWNLOADER_MIDDLEWARES_BASE

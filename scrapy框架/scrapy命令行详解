@@ -1,0 +1,82 @@
+1、scrapy命令
+一些相关提示
+
+2、creating projects
+scrapy startproject myproject [project_dir]
+
+3、spider generation
+scrapy genspider baidu.com www.baidu.com
+
+4、global commands
+startproject
+genspider
+settings
+runspider
+shell
+fetch
+view
+version
+
+5、project-only commands:
+crawl
+check
+list
+edit
+parse
+bench
+
+6 genspider
+scrapy genspider [-t template] <name> <domain>
+
+可以指定模版
+scrapy genspider -t crawl zhihu www.zhihu.com
+
+7 crawl
+运行spider的方法
+scrapy crawl <spider>
+
+8 check
+检查代码是否有错误
+scrapy check [-l] <spider>
+
+9 list
+返回项目里面所有spider的名称
+scrapy list
+
+10 fetch
+scrapy fetch <url>
+
+11 view
+帮助请求url，并进行下载并保存成文件，同时会用浏览器帮你打开，不过是file形式的
+scrapy view <url>
+
+12 shell
+浏览器交互模式
+scrapy shell [url]
+类似于ipython
+
+13 parse
+scrapy parse <url> [options]
+传入一个url，指定参数，查看解析结果
+-c 制定了一个解析函数，能够得到解析结果
+scrapy parse http://quotes.toscrape.com -c parse
+
+14 settings
+获取当前的一些配置信息
+scrapy settings [options]
+
+15 runspider
+运行spider,指定文件名，而不是name
+scrapy runspider <spider_file.py>
+
+16 version
+scrapy version [-v]
+-v 指定的话可以输出依赖库
+
+17 bench
+scrapy bench 进行测试的，比如爬行速度等
+
+
+
+
+

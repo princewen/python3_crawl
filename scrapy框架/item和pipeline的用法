@@ -1,0 +1,8 @@
+每个pipeline必须实现下面的方法：
+process_item(self,item,spider)
+return item 或者 raise DropItem()
+
+可选方法：
+open_spider(self,spider)
+close_spider(self,spider)
+
