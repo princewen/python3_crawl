@@ -7,7 +7,7 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from selenium.webdriver import DesiredCapabilities
 import lxml.html
 import pymongo
-from lib.db_connection import *
+
 import datetime
 import time
 from pymongo.errors import AutoReconnect
@@ -99,7 +99,6 @@ def insert_mongodb(item, times=0):
     try:
         db.weixin.insert(item)
     except AutoReconnect:
-
         times += 1
         if times <= 5:
             print('连接错误，正在尝试重新连接mongodb')
